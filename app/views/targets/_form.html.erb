@@ -1,0 +1,62 @@
+<%= form_for(target) do |f| %>
+  <% if target.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(target.errors.count, "error") %> prohibited this target from being saved:</h2>
+
+      <ul>
+      <% target.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :vuforia_name %>
+    <%= f.text_field :vuforia_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :transaction_id %>
+    <%= f.text_field :transaction_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :target_id %>
+    <%= f.text_field :target_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.text_field :image %>
+  </div>
+
+  <div class="field">
+    <%= f.label :path %>
+    <%= f.text_field :path %>
+  </div>
+
+  <div class="field">
+    <%= f.label :place %>
+    <%= f.text_field :place %>
+  </div>
+
+  <div class="field">
+    <%= f.label :city %>
+    <%= f.text_field :city %>
+  </div>
+
+  <div class="field">
+    <%= f.label :discountChance %>
+    <%= f.text_field :discountChance %>
+  </div>
+
+  <div class="field">
+    <%= f.label :discountRate %>
+    <%= f.text_field :discountRate %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

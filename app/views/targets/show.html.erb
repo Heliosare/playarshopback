@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Vuforia name:</strong>
+  <%= @target.vuforia_name %>
+</p>
+
+<p>
+  <strong>Transaction:</strong>
+  <%= @target.transaction_id %>
+</p>
+
+<p>
+  <strong>Target:</strong>
+  <%= @target.target_id %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @target.image %>
+</p>
+
+<p>
+  <strong>Path:</strong>
+  <%= @target.path %>
+</p>
+
+<p>
+  <strong>Place:</strong>
+  <%= @target.place %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @target.city %>
+</p>
+
+<p>
+  <strong>Discountchance:</strong>
+  <%= @target.discountChance %>
+</p>
+
+<p>
+  <strong>Discountrate:</strong>
+  <%= @target.discountRate %>
+</p>
+
+<%= link_to 'Edit', edit_target_path(@target) %> |
+<%= link_to 'Back', targets_path %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @game_list.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @game_list.description %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @game_list.image %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @game_list.level %>
+</p>
+
+<%= link_to 'Edit', edit_game_list_path(@game_list) %> |
+<%= link_to 'Back', game_lists_path %>

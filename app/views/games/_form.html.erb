@@ -1,0 +1,72 @@
+<%= form_for(game) do |f| %>
+  <% if game.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(game.errors.count, "error") %> prohibited this game from being saved:</h2>
+
+      <ul>
+      <% game.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ref %>
+    <%= f.text_field :ref %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :logo %>
+    <%= f.text_field :logo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :color1 %>
+    <%= f.text_field :color1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :color2 %>
+    <%= f.text_field :color2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :perso1 %>
+    <%= f.text_field :perso1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :perso2 %>
+    <%= f.text_field :perso2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :custom %>
+    <%= f.text_field :custom %>
+  </div>
+
+  <div class="field">
+    <%= f.label :discount %>
+    <%= f.text_field :discount %>
+  </div>
+
+  <div class="field">
+    <%= f.label :vuforia_name %>
+    <%= f.text_field :vuforia_name %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

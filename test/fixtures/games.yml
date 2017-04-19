@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ref: MyString
+  name: MyString
+  description: MyString
+  logo: MyString
+  color1: MyString
+  color2: MyString
+  perso1: MyString
+  perso2: MyString
+  custom: MyString
+  discount: MyString
+  vuforia_name: MyString
+
+two:
+  ref: MyString
+  name: MyString
+  description: MyString
+  logo: MyString
+  color1: MyString
+  color2: MyString
+  perso1: MyString
+  perso2: MyString
+  custom: MyString
+  discount: MyString
+  vuforia_name: MyString

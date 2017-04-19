@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ref:</strong>
+  <%= @game.ref %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @game.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @game.description %>
+</p>
+
+<p>
+  <strong>Logo:</strong>
+  <%= @game.logo %>
+</p>
+
+<p>
+  <strong>Color1:</strong>
+  <%= @game.color1 %>
+</p>
+
+<p>
+  <strong>Color2:</strong>
+  <%= @game.color2 %>
+</p>
+
+<p>
+  <strong>Perso1:</strong>
+  <%= @game.perso1 %>
+</p>
+
+<p>
+  <strong>Perso2:</strong>
+  <%= @game.perso2 %>
+</p>
+
+<p>
+  <strong>Custom:</strong>
+  <%= @game.custom %>
+</p>
+
+<p>
+  <strong>Discount:</strong>
+  <%= @game.discount %>
+</p>
+
+<p>
+  <strong>Vuforia name:</strong>
+  <%= @game.vuforia_name %>
+</p>
+
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>

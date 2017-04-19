@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Games</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ref</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Logo</th>
+      <th>Color1</th>
+      <th>Color2</th>
+      <th>Perso1</th>
+      <th>Perso2</th>
+      <th>Custom</th>
+      <th>Discount</th>
+      <th>Vuforia name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @games.each do |game| %>
+      <tr>
+        <td><%= game.ref %></td>
+        <td><%= game.name %></td>
+        <td><%= game.description %></td>
+        <td><%= game.logo %></td>
+        <td><%= game.color1 %></td>
+        <td><%= game.color2 %></td>
+        <td><%= game.perso1 %></td>
+        <td><%= game.perso2 %></td>
+        <td><%= game.custom %></td>
+        <td><%= game.discount %></td>
+        <td><%= game.vuforia_name %></td>
+        <td><%= link_to 'Show', game %></td>
+        <td><%= link_to 'Edit', edit_game_path(game) %></td>
+        <td><%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Game', new_game_path %>

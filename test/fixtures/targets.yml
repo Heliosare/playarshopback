@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vuforia_name: MyString
+  transaction_id: MyString
+  target_id: MyString
+  image: MyString
+  path: MyString
+  place: MyString
+  city: MyString
+  discountChance: MyString
+  discountRate: MyString
+
+two:
+  vuforia_name: MyString
+  transaction_id: MyString
+  target_id: MyString
+  image: MyString
+  path: MyString
+  place: MyString
+  city: MyString
+  discountChance: MyString
+  discountRate: MyString

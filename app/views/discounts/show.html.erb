@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @discount.level %>
+</p>
+
+<p>
+  <strong>Success:</strong>
+  <%= @discount.success %>
+</p>
+
+<p>
+  <strong>Fail:</strong>
+  <%= @discount.fail %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @discount.state %>
+</p>
+
+<%= link_to 'Edit', edit_discount_path(@discount) %> |
+<%= link_to 'Back', discounts_path %>

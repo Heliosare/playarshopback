@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  level: MyString
+  success: MyString
+  fail: MyString
+  state: MyString
+
+two:
+  level: MyString
+  success: MyString
+  fail: MyString
+  state: MyString
